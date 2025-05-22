@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.hikaricp)
     implementation(libs.logback.classic)
 
+    implementation("io.modelcontextprotocol:kotlin-sdk:0.5.0")
+
     testImplementation(libs.ktor.server.test.host)
 }
 

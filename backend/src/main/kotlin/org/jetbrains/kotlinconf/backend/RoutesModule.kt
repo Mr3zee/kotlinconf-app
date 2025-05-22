@@ -7,11 +7,11 @@ import io.ktor.server.routing.*
 import org.jetbrains.kotlinconf.backend.routes.newsRoutes
 import org.jetbrains.kotlinconf.backend.routes.imageProxyRoutes
 import org.jetbrains.kotlinconf.backend.routes.adminRoutes
+import org.jetbrains.kotlinconf.backend.routes.mcpRouting
 import org.jetbrains.kotlinconf.backend.routes.timeRoutes
 import org.jetbrains.kotlinconf.backend.routes.userRoutes
 import org.jetbrains.kotlinconf.backend.routes.votingRoutes
 import org.jetbrains.kotlinconf.backend.routes.scheduleRoutes
-
 
 fun Application.routesModule() {
     routing {
@@ -27,6 +27,6 @@ fun Application.routesModule() {
             call.respond(HttpStatusCode.OK)
         }
     }
+
+    mcpRouting()
 }
-
-
